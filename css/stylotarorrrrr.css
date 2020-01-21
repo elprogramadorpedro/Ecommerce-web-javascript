@@ -18,7 +18,18 @@ height: 100vh;
 min-height: 600px;
 }
 
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.contenido-header h5 {
+    color: white;
+    padding-bottom: 20px;/*ESPACIO HACIA DENTRO DEL ELEMENTO*/
+    margin-left: 70px;
+}
 
 
 .barra{
