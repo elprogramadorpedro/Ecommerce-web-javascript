@@ -1,15 +1,38 @@
 
 body{
      font-family: 'Raleway', sans-serif;
+     line-height: 2px;
 }
 
-.contenedor{
+.contenedor{  /*esta clase hace que todo se vea centrado aplicada a la primera seccion y al header*/
 max-width: 1200px;
 margin: 0 auto;
 
 }
+h1{
+    font-size: 38 px;
+}
+h2{
+    font-size: 34px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 26px;
+}
+
+/*Header*/
+
+.seccion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 
+/*recordar que flexbox solo afecta el primer nivel*/
+
+/*Header*/
 .headermasfondo{
 background-image: url(../img/exageo5067.png);
 background-position: center center;
@@ -28,7 +51,9 @@ min-height: 600px;
 .contenido-header h5 {
     color: white;
     padding-bottom: 20px;/*ESPACIO HACIA DENTRO DEL ELEMENTO*/
-    margin-left: 70px;
+    margin-left: 70px; /*espacio hacia la izquierda*/
+    max-width: 200px;/* esto actua como un br se para el texto en dos partes*/
+    line-height: 20px; /*espaciado entre lineas*/
 }
 
 
@@ -54,7 +79,30 @@ min-height: 600px;
     color: cornflowerblue;
 }
 
+/*iconos nosotros*/ /*esto pertenece a la primera seccion no confundir con el gran header*/
+/*comenzamos a plicar flexbox*/
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+    
+}
 
+/*definiedo en ancho*/
+    .icono{
 
+        flex-basis: calc(33.3% - 1rem);
+                     /*(este calculo es para que cada uno mida lo mismo y tome todo el espacio disponible
+                     mesclada con justify-content: que lo tenemos arriba en iconos nosotros;)*/
+            text-align: center; /*centrar los textos de la primera seccion*/
+    }
 
+.img-tamaño{
+    width: 200px;
+    height: 200px;
+}
 
+.icono h3{
+
+    text-transform: uppercase;
+
+}
