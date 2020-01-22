@@ -78,8 +78,14 @@ min-height: 600px;
 .navegacion a:hover{
     color: cornflowerblue;
 }
+.encabezado-nosotros{
 
-/*iconos nosotros*/ /*esto pertenece a la primera seccion no confundir con el gran header*/
+font-weight: 900;
+text-align: center;
+
+}
+/*iconos nosotros*/
+ /*esto pertenece a la primera seccion no confundir con el gran header*/
 /*comenzamos a plicar flexbox*/
 .iconos-nosotros{
     display: flex;
