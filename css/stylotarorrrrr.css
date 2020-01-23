@@ -4,6 +4,20 @@ body{
      line-height: 2px;
 }
 
+
+
+
+/*Globales este hace que todas las imagenes sean responsivas*/
+
+.img-tamaño{
+    max-width: 100%;
+}
+
+
+
+
+
+
 .contenedor{  /*esta clase hace que todo se vea centrado aplicada a la primera seccion y al header*/
 max-width: 1200px;
 margin: 0 auto;
@@ -28,6 +42,21 @@ h4{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/*-------------------------------------------------------------------------------------------------*/
+/*framework este es para centrar y el gror de parrafo Crescimento Pessoal e Espiritual*/
+
+.fw-300{
+    font-weight: 300;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
 
 
 /*recordar que flexbox solo afecta el primer nivel*/
@@ -78,15 +107,15 @@ min-height: 600px;
 .navegacion a:hover{
     color: cornflowerblue;
 }
-.encabezado-nosotros{
 
-font-weight: 900;
-text-align: center;
-
-}
 /*iconos nosotros*/
  /*esto pertenece a la primera seccion no confundir con el gran header*/
 /*comenzamos a plicar flexbox*/
+
+
+
+
+
 .iconos-nosotros{
     display: flex;
     justify-content: space-between;
@@ -102,13 +131,36 @@ text-align: center;
             text-align: center; /*centrar los textos de la primera seccion*/
     }
 
-.img-tamaño{
-    width: 200px;
-    height: 200px;
-}
+
 
 .icono h3{
 
     text-transform: uppercase;
 
 }
+
+/*anuncios con articulos de ventas*/
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between; /*nos genera la separacion entre cada articulo*/
+}
+
+.anuncio{
+    flex-basis: calc(33.3% - 1rem); /*para la distribucion correcta de las images*/
+    border: 1px solid #B5B5B5; 
+    background-color: #F5F5F5; /*COLO FONDO DE ANUNCIOS*/
+
+   
+}
+
+
+.contenido-anuncio{
+padding: 20px; /*lo aplica hacia todas las direcciones*/  /*si quieres especificar direcciones debes usar padding , top, left, bottom y right*/
+}
+
+.contenido-anuncio h3, 
+.contenido-anuncio p {
+    margin: 0;
+}
+
