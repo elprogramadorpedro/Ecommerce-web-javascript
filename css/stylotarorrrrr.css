@@ -1,3 +1,22 @@
+/*---------------obligatorio para todos los proyectos----------------*/
+
+html {
+    box-sizing: border-box;
+    
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+
+
+
+
+
+
+/*---------------obligatorio para todos los proyectos----------------*/
 
 body{
      font-family: 'Raleway', sans-serif;
@@ -36,6 +55,18 @@ h4{
     font-size: 26px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*Header*/
 
 .seccion{
@@ -54,6 +85,49 @@ h4{
     text-align: center;
 }
 /*-------------------------------------------------------------------------------------------------*/
+
+
+.d-block{
+    display: block !important;
+}
+
+
+/*Botones*/
+
+.botom{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block; /*nos permite modificar el ancho y el alto del boton*/
+    text-align: center;
+}
+
+.botom-amarillo{
+background-color: #e08709;
+display: block;
+}
+
+.botom-verde{
+    background-color: #71b100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,12 +229,52 @@ min-height: 600px;
 }
 
 
-.contenido-anuncio{
-padding: 20px; /*lo aplica hacia todas las direcciones*/  /*si quieres especificar direcciones debes usar padding , top, left, bottom y right*/
+
+ /*lo aplica hacia todas las direcciones*/ 
+  /*si quieres especificar direcciones debes usar padding , top, left, bottom y right*/
+
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+.contenido-anuncio h3, 
+.contenido-anuncio p  {
+    margin: 60;
 }
 
-.contenido-anuncio h3, 
-.contenido-anuncio p {
-    margin: 0;
+
+.precio{
+    color: yellowgreen;
+    font-weight: 700;
 }
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.imagen-contacto{
+    background-image: url(../img/12514wide.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.contenido-contacto{
+    flex: 1; /*esto se conoce como factor de crecimiento*/
+    color: #ffffff;
+}
+
+.contenido-contacto p{
+    font-size: 1.8rem;
+}
+
+
+
+
+
 
